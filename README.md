@@ -16,3 +16,4 @@ https://imgur.com/xSlgvtl
 * Basic Wallet (basic_wallet_p)
 
 Based on blockchain by dvf.  Used under MIT license:  https://github.com/dvf/blockchain
+edit
