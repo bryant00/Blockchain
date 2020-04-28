@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- styles -->
+<!--     <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}"> -->
+    <link src="//code.angularjs.org/snapshot/angular.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <link src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+
+<body>
+    <div ng-controller="FetchController">
+        <select ng-model="method" aria-label="Request method">
+            <option>GET</option>
+            <option>JSONP</option>
+        </select>
+        <input type="text" ng-model="url" size="80" aria-label="URL" />
+        <button id="fetchbtn" ng-click="fetch()">fetch</button><br>
+        <button id="samplegetbtn" ng-click="updateModel('GET', '/chain')">Sample GET</button>
+        <pre>http status code: {{status}}</pre>
+        <pre>http response data: {{data}}</pre>
+    </div>
+    <br><br>
+    <!-- scripts -->
+    <!-- <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
+    <!-- <script src="//code.jquery.com/jquery-2.2.1.min.js"></script> -->
+   <!--  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script> -->
+    <!-- <script src="{{ url_for('static', filename='main.js') }}"></script> -->
+</body>
+
+</html>
